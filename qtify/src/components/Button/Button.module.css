@@ -1,9 +1,9 @@
 .button {
-background-color: black;
-color: green;
-border-radius: 12px;
-border: 1px;
-padding: 10px, 16px;
-cursor: pointer;
-
-}
+    cursor: pointer;
+    background-color: var(--color-black);
+    color: var(--color-primary);
+    border-radius: 7px;
+    border: 1px solid transparent; /* Define border style */
+    padding: 10px 16px; /* Use space instead of comma for padding values */
+  }
+  

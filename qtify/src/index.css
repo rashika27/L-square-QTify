@@ -1,8 +1,9 @@
 :root {
-  --color-primary: #34c94b
-  --color-black: #121212
-  --color-white: #ffffff
+  --color-primary: #34c94b;
+  --color-black: #121212;
+  --color-white: #ffffff;
 }
+
 
 *,
 *::before,
@@ -21,8 +22,8 @@ body{
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 img,

@@ -1,18 +1,18 @@
 import React from 'react';
-import {ReactComponent as QtifyLogo} from "../../assets/qtify-logo.svg"
-import {ReactComponent as QtifyText} from "../../assets/q-tify.svg"
 import Search from '../Search/Search';
 import Button from '../Button/Button';
 import styles from "./Navbar.module.css"
 
-function Navbar  ()  {
+function Navbar  ({ searchData })  {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>
-      <QtifyLogo className={styles.QtifyLogo} />
-        <QtifyText className={styles.QtifyText} />
-      </div>
-      <Search placeholder={"Search an album of your choice"} /> 
+      <a href='/'>
+      <img src={require ("../../assets/logo.png")} width ={67} alt="Qtify"/>
+      </a>
+      
+      <Search placeholder={"Search an album of your choice"}
+      searchData={searchData}
+      /> 
       <Button>Give Feedback</Button> 
     </nav>
   );
