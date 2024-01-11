@@ -53,6 +53,10 @@ h6{
   overflow: break-word;
 }
 
+.swiper-slide{
+  width: auto !important;
+}
+
 #root,
 #__next{
   isolation: isolate;
