@@ -2,13 +2,15 @@ import React from 'react';
 import Search from '../Search/Search';
 import Button from '../Button/Button';
 import styles from "./Navbar.module.css"
+import { Link } from '@mui/material'
+
 
 function Navbar  ({ searchData })  {
   return (
     <nav className={styles.navbar}>
-      <a href='/'>
+      <Link to ='/'/>
       <img src={require ("../../assets/logo.png")} width ={67} alt="Qtify"/>
-      </a>
+      
       
       <Search placeholder={"Search an album of your choice"}
       searchData={searchData}

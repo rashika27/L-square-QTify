@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Card.module.css"
 import { Tooltip } from '@mui/material';
 import { Chip } from '@mui/material';
+import { Link } from '@mui/material'
 
 
 
@@ -12,7 +13,7 @@ function Card({data, type}) {
                 const {image, title,follows, slug, songs} = data
                 return(
                     <Tooltip title = {`${songs.length} songs`} placement="top" arrow>
-                        <a href ={`/album/${slug}`}>
+                        <Link to  ={`/album/${slug}`}/>
                     <div className={styles.wrapper}>
             
                         <div className={styles.card}>
@@ -30,7 +31,7 @@ function Card({data, type}) {
                                 <p> {title}</p>
                         </div>
                     </div>
-                    </a>
+                    
                     </Tooltip>
                 )
             }
