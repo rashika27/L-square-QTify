@@ -6,6 +6,7 @@ import { fetchTopAlbums, fetchNewAlbums, fetchSongs } from "./api/api";
 
 function App() {
   const [data,setData] = useState({})
+  const [searchData, useSearchData]= useState()
 
   const generateData = (key, source) => {
 
@@ -20,7 +21,7 @@ function App() {
   useEffect(() => {
     generateData("topAlbums", fetchTopAlbums)
     generateData("newAlbums", fetchNewAlbums)
-    generateData("Songs", fetchSongs)
+    generateData("songs", fetchSongs)
 
   }, [])
 
